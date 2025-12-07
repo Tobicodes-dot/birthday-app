@@ -1,0 +1,37 @@
+.loading-container {
+  /* Match the light pink background of the design */
+  background-color: #ffe6f0;
+  
+  /* Make it full screen */
+  width: 100vw;
+  height: 100vh;
+  
+  /* Center the content (heart and name) */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  /* Hide overflow from glow, if any */
+  overflow: hidden;
+}
+
+/* Creates the soft, radial glow effect 
+  behind the heart and name.
+*/
+.loading-container::before {
+  content: '';
+  position: absolute;
+  /* Adjust size and blur for desired glow effect */
+  width: 50vw; 
+  height: 50vw;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle, 
+    rgba(255, 255, 255, 0.7) 0%, /* White center */
+    rgba(255, 204, 221, 0.3) 50%, /* Pink fade */
+    rgba(255, 230, 240, 0) 100% /* Transparent edge */
+  );
+  filter: blur(50px);
+  z-index: 0; /* Keep it behind the content */
+}
