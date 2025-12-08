@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/global.css';
 import BottomNav from '../components/shared/bottomNav';
 import VideoPreview from '../components/home/VideoPreview';
+import BirthdayMessage from '../components/home/BirthdayMessage';
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <div className="w-full min-h-screen">
         <VideoPreview />
       </div>
+      <BirthdayMessage />
       <BottomNav />
     </div>
   );

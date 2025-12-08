@@ -34,6 +34,19 @@
 clip-path: ellipse(110% 100% at 50% -0%);
 }
 
+@layer utilities {
+  .min-h-screen {
+    min-height: 52vh;
+  }
+}
+
+@layer utilities {
+  .text-center {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+}
+
 
 
 /* Styles for the loading screen container */
