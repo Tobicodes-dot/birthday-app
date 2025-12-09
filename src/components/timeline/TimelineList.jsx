@@ -9,7 +9,7 @@ const Timeline = () => {
     <div className="min-h-screen bg-linear-to-b from-[#FFF6F9] to-[#FFE9F1] px-5 pb-24 pt-6">
 
       <h2 className="text-center text-2xl font-[Parisienne] text-pink-600 mb-8">
-        Our Moments Through Time
+        My baby's timeline
       </h2>
 
       <div className="space-y-10">
