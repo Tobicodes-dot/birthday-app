@@ -6,6 +6,7 @@ import Loading from '../pages/Loading.jsx';
 import Home from '../pages/Home.jsx';
 import Timeline from '../pages/Timeline.jsx';
 import Letters from '../pages/Letters.jsx'
+import Playlist from '../pages/Playlist.jsx';
 // ... import other pages
 
 const AppRouter = () => {
@@ -16,6 +17,7 @@ const AppRouter = () => {
       <Route path="/home" element={<Home />} />
       <Route path="/timeline" element={<Timeline />} />
       <Route path="/letters" element={<Letters />} />
+      <Route path="/playlist" element={<Playlist />} />
     </Routes>
   );
 };

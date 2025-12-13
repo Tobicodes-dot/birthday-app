@@ -1,0 +1,17 @@
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.vinyl {
+  border-radius: 9999px;
+  animation: spin 6s linear infinite;
+}
+
+.vinyl-paused {
+  animation-play-state: paused;
+}
+
+.glow {
+  box-shadow: 0 0 20px rgba(255, 77, 148, 0.6);
+}
